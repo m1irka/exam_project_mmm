@@ -86,6 +86,10 @@ void printRandomErrorMessage() {
     }
 }
 
+void Line() {
+	cout << "-----------------------------------------------------------------------" << endl;
+}
+
 
 int main() {
     srand(time(0));
@@ -128,7 +132,7 @@ int main() {
         compChoice = rand() % 3 + 1;
 
      
-        cout << "-----------------------------------------------------------------------" << endl;
+        Line();
         cout << "       \033[33mYou: \033[0m";
         switch (playerChoice) {
         case 1: cout << "rock     "; break;
